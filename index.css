@@ -1,0 +1,116 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: auto;
+	background: #bee1d6;
+
+}
+
+.header{
+	background-color: #002147;
+	height: 110px;
+	width: 100%;
+	display: block;
+}
+
+.logo{
+	float: left;
+	width: 80px;
+	height: 80px;
+	
+}
+
+.innerheader{
+	width: 90%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	
+}
+
+.container{
+	height: 100%;
+	width: 90%;
+	float: left;
+	
+}
+
+.container h1{
+	color: white;
+	height: 100%;
+	display: table;
+	vertical-align: middle;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	margin-left: 90px;
+}
+
+
+.container h1 span{
+	font-weight: 100;
+	font-size: 30px;
+	
+}
+.hoverbox{
+
+	margin: auto;
+	width: 500px;
+	height: 500px;
+	background: url(indexpics/pic1.jpg);
+	background-size: 500px;
+	background-repeat: no-repeat;
+	animation: slide 30s infinite;
+
+}
+
+
+@keyframes slide{
+	25%{
+		background: url(indexpics/pic2.jpg);
+		background-size: 500px;
+		background-repeat: no-repeat;
+	}
+	50%{
+		background: url(indexpics/pic3.jpg);
+		background-size: 500px;
+		background-repeat: no-repeat;
+	}
+	75%{
+		background: url(indexpics/pic4.jpg);
+		background-size: 500px;
+		background-repeat: no-repeat;
+	}
+	100%{
+		background: url(indexpics/pic5.jpg);
+		background-size: 500px;
+		background-repeat: no-repeat;
+	}
+}
+
+
+.button{
+	color:  none  ;
+	font-family: "proxima nova"
+	font-size: 30px;
+	text-align: center;
+	border: solid 2px ;
+	border-color: black;
+	border-radius: 30px;
+	padding: 10px 50px;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #002147;
+   color: white;
+   text-align: center;
+}
+
+
+
+
