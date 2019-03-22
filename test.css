@@ -1,0 +1,226 @@
+*{
+  margin-top: 5px;
+  
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+  background: grey;
+
+
+}
+
+.header{
+	height: 100px;
+	background: #002147;
+	padding: 10px 10px;
+  width: 98.2%;
+  border: 1px solid black;
+}
+
+.logo2{
+  width: 100px;
+  height: 90px;
+
+}
+
+.logo{
+	line-height: 100px;
+	float: left;
+	text-transform: uppercase;
+}
+
+.menu{
+	float: right;
+	line-height: 100px;
+}
+
+.menu a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.4s;
+}
+
+.show-menu-btn,.hide-menu-btn{
+	transition: 0.5s;
+	font-size: 30px;
+	cursor: pointer;
+  display: none;
+}
+
+.show-menu-btn{
+	float: right;
+}
+
+.show-menu-btn i{
+	line-height: 100px;
+}
+
+.menu a:hover, .show-menu-btm:hover, .hide-menu-btn:hover{
+	color: yellow;
+}
+
+#chck{
+	position: absolute;
+	visibility: hidden;
+  z-index: -1111;
+} 
+
+@media screen and (max-width:800px){
+	.show-menu-btn,.hide-menu-btn{
+		display: block;
+	}
+	.menu{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-image: url(pics/studentdashbg.png);
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: 0.7s;
+    z-index: 10;
+}
+
+	.menu a{
+		display: block;
+		padding: 20px;
+	}
+	.hide-menu-btn{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+	#chck:checked ~ .menu{
+		right: 0;
+	}
+}
+
+.h1-title {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.slides {
+    width: 609px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+.slides input { 
+    display: none; 
+}
+
+.slide-container { 
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 
+
+    
+}
+
+.nav label {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    margin-top: 29%;
+}
+
+.nav label:hover { 
+    color: #000;
+}
+
+.nav .next { 
+    right: -45px; 
+}
+
+.nav .prev {
+    left: -53px;
+} 
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { 
+    display: block; 
+}
+
+.nav-dots {
+  width: 100%;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin-top: 80%;
+}
+
+.nav-dots .nav-dot {
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 609px) {
+  .slides {
+    width: 100%;
+  }
+}
+  
+
+#images-slider{
+border: 1px solid grey;
+}
+
+.slide{
+  border: 1px solid grey;
+  width: 600px;
+  height: 500px;
+}
+
+.content{
+  position: absolute;
+  background-color: rgba(0 , 0 , 0 , 0.8);
+  color: white;
+  bottom: 20px;
+}

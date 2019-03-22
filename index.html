@@ -1,52 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laboratory Reservation</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
-
-	<div class="header">
-		<div class="innerheader">
-			<div class="container">
-				<img src="indexpics/logomikels.png"  class="logo" />
-				<h1> ST. MICHAEL'S COLLEGE <br> <span> CHEMISTRY LABORATORY</span></h1>
-			</div>			
-		</div>		
-	</div>
-		
-	
-
-
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 </head>
+
+
 
 <body>
 
-<div class="hoverbox">
-
-	
+	<div class="header">
 		
-</div>
+		<img src="index/logo2.png" class="logo2">
+		<input type="checkbox" id="chck">
+		<label for="chck" class="show-menu-btn">
+			<i class="fas fa-bars"></i>
+		</label>
+			
 
-
-
-
-        <div class="but">     
-
-     	 <center><button type="submit" onclick="window.location.href='viewapparatus.php'" class="button">View Apparatus & Chemicals</button></center>
-     	 <
-
-     	</div>
-
-
-
-<footer>
-	
-	<div class="footer">
-		
-		<p>COPYRIGHT © 2019 - SMC Class WEBDEV DB2 SAD</p>
-
-
+		<ul class="menu">
+			<a href="">Home</a>
+			<a href="">Account</a>
+			<a href="">My.Reservation</a>
+			<a href="">Charchar</a>
+			<a href="">Varchar</a>
+			<label for="chck" class="hide-menu-btn">
+			<i class="fas fa-times"></i>
+		</label>				
+		</ul>		
 	</div>
-</footer>
+
+<section id="images-slider">
+  <h1 class="h1-title">Responsive Image Slider Only With Html And Css</h1>
+  
+   <ul class="slides">
+   
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="index/entrance.jpg">
+			<div class="content">
+        	<h2>WHAT HAWHA HT </h2>
+        	<p>jokokoksok oaksokaokokaoskoaskoaksk askakoskoaksokakoska akoskaoksoa aksokaoksako</p>
+        </div>	
+        </div>
+
+		<div class="nav">
+			<label for="img-6" class="prev"><i class="fas fa-chevron-circle-left fa-3x"></i></label>
+			<label for="img-2" class="next"><i class="fas fa-chevron-circle-right fa-3x"></i></label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="index/building.jpg">
+          <div class="content">
+          <h2>WHAT HAWHA HT </h2>
+        	<p>jokokoksok oaksokaokokaoskoaskoaksk askakoskoaksokakoska akoskaoksoa aksokaoksako</p>
+        </div>
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev"><i class="fas fa-chevron-circle-left fa-3x"></i></label>
+			<label for="img-3" class="next"><i class="fas fa-chevron-circle-right fa-3x"></i></label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="index/faith.png">
+          <div class="content">
+          <h2>WHAT HAWHA HT </h2>
+        	<p>jokokoksok oaksokaokokaoskoaskoaksk askakoskoaksokakoska akoskaoksoa aksokaoksako</p>
+        </div>
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev"><i class="fas fa-chevron-circle-left fa-3x"></i></label>
+			<label for="img-4" class="next"><i class="fas fa-chevron-circle-right fa-3x"></i></label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="index/pic1.jpg"	>
+          <div class="content">
+          <h2>WHAT HAWHA HT </h2>
+        	<p>jokokoksok oaksokaokokaoskoaskoaksk askakoskoaksokakoska akoskaoksoa aksokaoksako</p>
+        </div>
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev"><i class="fas fa-chevron-circle-left fa-3x"></i></label>
+			<label for="img-5" class="next"><i class="fas fa-chevron-circle-right fa-3x"></i></label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="index/pic2.jpg">
+          <div class="content">
+          <h2>WHAT HAWHA HT </h2>
+        	<p>jokokoksok oaksokaokokaoskoaskoaksk askakoskoaksokakoska akoskaoksoa aksokaoksako</p>
+        </div>
+        </div>
+		<div class="nav">
+			<label for="img-4" class="prev"><i class="fas fa-chevron-circle-left fa-3x"></i></label>
+			<label for="img-6" class="next"><i class="fas fa-chevron-circle-right fa-3x"></i></label>
+		</div>
+    </li>
+
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+    </li>
+</ul>
+</section>
+
 
 
 
