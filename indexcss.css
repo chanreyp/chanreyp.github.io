@@ -1,19 +1,19 @@
 *{
   margin-top: 5px;
-  
 	padding: 0;
 	font-family: sans-serif;
 }
 
 body{
-  background: grey;
+  background: white;
+  min-height: 800px;
 
 
 }
 
 .header{
 	height: 100px;
-	background: #002147;
+	background: grey;
 	padding: 10px 10px;
   width: 98.2%;
   border: 1px solid black;
@@ -22,6 +22,7 @@ body{
 .logo2{
   width: 100px;
   height: 90px;
+
 
 }
 
@@ -37,7 +38,7 @@ body{
 }
 
 .menu a{
-	color: #fff;
+	color: black;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 0 10px;
@@ -104,13 +105,14 @@ body{
 .h1-title {
     text-align: center;
     padding-bottom: 20px;
-    color: #fff;
+    color: black;
 }
 .slides {
     width: 609px;
     margin: 0 auto;
     position: relative;
     display: block;
+
 }
 .slides input { 
     display: none; 
@@ -127,6 +129,7 @@ body{
     position: absolute;
     transform: scale(0);
     transition: all .7s ease-in-out;
+
 }
 
 .slide img {
@@ -209,11 +212,11 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   
 
 #images-slider{
-border: 1px solid grey;
+border: 1px solid white;
 }
 
 .slide{
-  border: 1px solid grey;
+  border: 1px white;
   width: 600px;
   height: 500px;
 }
@@ -223,4 +226,59 @@ border: 1px solid grey;
   background-color: rgba(0 , 0 , 0 , 0.8);
   color: white;
   bottom: 20px;
+  padding: 20px;
+
+}
+
+.chemicalsdiv{
+  border: 1px solid black;
+  width: 99%;
+  height: 500px;
+  margin-top: 570px;
+  border-radius: 20px;
+  background-color: #d3d3d3;
+  padding: 20px;
+}
+
+.chemicalsdiv h1{
+  float: left;
+
+  
+}
+
+.chemicalsdiv img{
+  float: right;
+  padding: 30px 30px;
+}
+
+.chemicalsdiv span{
+  font-size: 30px;
+}
+
+.apparatusdiv{
+  border: 1px solid black;
+  width: 99%;
+  height: 500px;
+  margin-top: 60px;
+  border-radius: 20px;
+   background-color: #d3d3d3;
+   padding: 20px;
+}  
+
+.apparatusdiv img{
+  float: left;
+  width: 500px;
+  height: 400px;
+  padding: 50px 50px;
+}
+
+
+
+footer{
+   position: fixed;
+   bottom: 1px;
+   width: 98.9%;
+   background-color: grey;
+   color: white;
+   text-align: center;
 }
